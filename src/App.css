@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Roboto:wght@300&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+
+.main-body{
+	width: 100%;
+}
+/* Upper Body */
+.upper-body {
+	background: #f9fafb;
+	padding-bottom: 80px;
+}
+.Header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 170px 0px 170px;
+}
+.Header img {
+	width: 9rem;
+}
+.Header .navi-button {
+	display: flex;
+	align-items: center;
+}
+.Header h6 {
+	color: white;
+	margin: 0 30px;
+	cursor: pointer;
+}
+.Header .book-demo {
+	padding: 10px 27px;
+	border: 2px solid white;
+	border-radius: 27px 0 0 0;
+}
+.upper-body .dialog-box {
+	margin: 0 40px;
+	background: #ffffff;
+	padding: 60px 0;
+	gap: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.upper-body .dialog-box .heading {
+	font-size: 50px;
+	font-weight: 0;
+}
+.upper-body .dialog-box .search {
+	margin-top: 20px;
+	padding: 18px 30px;
+	border: 1px solid rgb(222, 221, 221);
+	background: #fafafa;
+	display: flex;
+	align-items: center;
+}
+.upper-body .dialog-box .search input {
+	border: none;
+	width: 24rem;
+	font-size: 1.3rem;
+	background: transparent;
+}
+.upper-body .dialog-box .search input::placeholder {
+	color: rgb(222, 221, 221);
+}
+.upper-body .dialog-box .search input:focus {
+	outline: none;
+}
+
+/* Contact */
+.contact {
+	padding-top: 100px;
+	background: #f1f9ff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.contact .bookDemo {
+	position: relative;
+	z-index: 2;
+}
+.contact .bookDemo::after {
+	content: "";
+	position: absolute;
+	left: 7%;
+	bottom: 16px;
+	width: 104px;
+	height: 8px;
+	transform: translateX(116%) translateY(120%);
+	background: #22e287;
+	z-index: -1;
+}
+.contact .content {
+	display: flex;
+	gap: 60px;
+	align-items: center;
+	margin: 100px 0;
+}
+.contact .content .form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact .content .form .input-fields {
+	display: flex;
+	gap: 50px;
+}
+.contact .content .form .submit {
+	border: 3px solid #002365;
+	font-weight: 600;
+	background: transparent;
+	color: #002365;
+	padding-right: 10px;
+	width: 165px;
+	height: 45px;
+	border-radius: 25px 0 0 0;
+	margin-top: 30px;
+}
+.contact .content .form .submit span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.contact .content .form .submit span:after {
+	content: '>';
+	position: absolute;
+	opacity: 1;
+	top: 0;
+	right: -13px;
+	transition: 0.3s;
+}
+.contact .content .form .submit:hover span:after {
+	right: -26px;
+}
+
+.contact .content img {
+	height: 35rem;
+}
+.contact .content .input-fields select {
+	width: 16rem;
+	border: none;
+	background: transparent;
+	color: #a7adb0;
+	border-bottom: 1px solid #a7adb0;
+	margin: 20px 0;
+	padding: 0 0 15px 0;
+}
+.contact .content .input-fields select:focus {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+.contact .content .input-fields select:focus-visible {
+	border-bottom: 1px solid #a7adb0;
+}
+.contact .content input {
+	padding-bottom: 15px;
+	border: none;
+	border-bottom: 1px solid #a7adb0;
+	background: transparent;
+	margin: 20px 0;
+	text-indent: 15px;
+	color: #a7adb0;
+	width: 16rem;
+}
+.contact .content input:focus {
+	outline: none;
+}
+
+/* Footer */
+.footer {
+	background: #002365;
+	color: white;
+}
+.footer .line {
+	opacity: 1;
+}
+.footer .links {
+	display: flex;
+	justify-content: space-between;
+	padding: 5rem 10rem;
+}
+.footer .links .icons {
+	display: flex;
+	gap: 12px;
+	margin-top: 20px;
+}
+.footer .links .icons .icon {
+	width: 37px;
+	height: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.footer .links .component {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+.footer .links .component .nav-links {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	cursor: pointer;
+}
+.footer .cities {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px 240px;
+	gap: 40px 60px;
+}
+.footer .cities div {
+	cursor: pointer;
+}
+.footer .copyright {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 20px 0;
+}
